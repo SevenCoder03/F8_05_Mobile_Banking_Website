@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #7264d6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 58px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    cursor: pointer;
+
+    color: #fff;
+    border: 1px solid #212832;
+    border-radius: 6px;
+    background: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    color: #212832;
+    background-color: #fff;
+    border-color: #212832;
+}
+
+.btn--primary {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn--primary:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+
+.section-label {
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.section-label::before {
+    content: "";
+    position: relative;
+    top: -5px;
+    left: 0;
+    display: inline-block;
+    margin-right: 12px;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.section-heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section-desc {
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+/* Header */
+
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_wrapped {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.navbar {
+    margin-left: -400px;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    width: 355px;
+}
+
+.navbar__link {
+    position: relative;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.navbar--active::after {
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: var(--primary-color);
+}
+
+.header-action__link {
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.navbar__link:hover,
+.navbar--active,
+.header-action__link:hover {
+    color: #212832;
+    text-shadow: 0.25px 0 0 currentColor;
+}
+
+.header-action__btn {
+    --height: 52px;
+    min-width: 113px;
+    margin-left: 28px;
+}
+
+/* Hero */
+
+.hero {
+    margin-top: 50px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero__heading {
+    margin-top: 12px;
+    width: 500px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero__heading span {
+    color: var(--primary-color);
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 540px;
+}
+
+.hero__form {
+    position: relative;
+    margin-top: 40px;
+}
+
+.hero__input {
+    width: 540px;
+    height: 74px;
+    border: transparent;
+    outline: transparent;
+    border-radius: 8px;
+    padding: 23px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.hero__note {
+    margin-top: 20px;
+}
+
+.hero__media {
+    position: relative;
+    margin-left: 160px;
+}
+
+.hero__decor-1 {
+    position: absolute;
+    top: 113px;
+    right: 200px;
+}
+
+.hero__decor-2 {
+    position: absolute;
+    top: 127px;
+    left: 340px;
+}
+
+.hero__decor-3 {
+    position: absolute;
+    top: 433px;
+    left: 246px;
+}
