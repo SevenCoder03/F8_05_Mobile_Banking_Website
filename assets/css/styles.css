@@ -217,7 +217,7 @@ button {
     width: 540px;
     height: 74px;
     border: transparent;
-    outline: transparent;
+    outline: none;
     border-radius: 8px;
     padding: 23px;
     background: #fff;
@@ -479,6 +479,7 @@ button {
     height: 67px;
     border: 1px solid;
     border-color: transparent #dfe2e8 #dfe2e8 transparent;
+    border-radius: 5px;
     background-color: #fff;
     transform: rotate(45deg);
 }
@@ -544,4 +545,247 @@ button {
 .testimonial__dash:hover,
 .testimonial__dash--active {
     background-color: var(--primary-color);
+}
+
+/* Blog */
+
+.blog {
+    margin-top: 160px;
+}
+
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__heading {
+    margin-top: 6px;
+}
+
+.blog__desc {
+    margin-top: 18px;
+    width: 435px;
+    font-size: 1.6rem;
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.blog__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 22px;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.blog__item:hover {
+    border-color: transparent;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+}
+
+.blog__img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog__time {
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.blog__title {
+    margin-top: 10px;
+}
+
+.blog__title-link {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.blog__read {
+    margin-top: 20px;
+}
+
+.blog__read-link {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.63;
+}
+
+.blog__item:hover .blog__read-link {
+    color: var(--primary-color);
+}
+
+/* CTA */
+
+.cta {
+    margin-top: 160px;
+}
+
+.cta__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    border-radius: 24px;
+    background: #7264d6;
+}
+
+.cta__decor {
+    position: absolute;
+}
+
+.cta__decor:nth-child(1) {
+    top: 49px;
+    left: 904px;
+}
+
+.cta__decor:nth-child(2) {
+    top: 49px;
+    left: 112px;
+}
+
+.cta__decor:nth-child(3) {
+    top: 263px;
+    left: 166px;
+}
+
+.cta__decor:nth-child(4) {
+    top: 263px;
+    left: 850px;
+}
+
+.cta__label,
+.cta__heading {
+    color: #fff;
+}
+
+.cta__label::before {
+    background-color: #fff;
+}
+
+.cta__desc {
+    margin-top: 18px;
+    width: 435px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.cta__row {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 38px;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.footer__item {
+    display: inline-block;
+    margin-top: 18px;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.footer__desc {
+    margin-top: 24px;
+    width: 371px;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.footer__label {
+    display: inline-block;
+    margin-top: 48px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.footer__form-group {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 36px;
+}
+
+.footer__input {
+    width: 270px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    outline: none;
+}
+
+.footer__btn {
+    --height: 52px;
+}
+
+.footer__bottom {
+    display: flex;
+    column-gap: 100px;
+    margin-top: 54px;
+}
+
+.footer__mail,
+.footer__phone {
+    color: #6a6e78;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    text-decoration-line: underline;
+}
+
+.footer__copyright {
+    margin-top: 28px;
+    padding: 28px 0;
+    text-align: center;
+    color: #fff;
+    background: #7264d6;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
