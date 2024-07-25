@@ -96,6 +96,12 @@
 
         <!-- Styles css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -187,21 +193,25 @@
                             src="./assets/img/hero-01.svg"
                             alt=""
                             class="hero__img"
+                            data-aos="fade-up"
                         />
                         <img
                             src="./assets/img/hero-decor-01.svg"
                             alt=""
                             class="hero__decor-1"
+                            data-aos="fade-right"
                         />
                         <img
                             src="./assets/img/hero-decor-02.svg"
                             alt=""
                             class="hero__decor-2"
+                            data-aos="fade-left"
                         />
                         <img
                             src="./assets/img/hero-decor-03.svg"
                             alt=""
                             class="hero__decor-3"
+                            data-aos="fade-left"
                         />
                     </div>
                 </div>
@@ -219,16 +229,19 @@
                                 src="./assets/img/work.svg"
                                 alt=""
                                 class="works__img"
+                                data-aos="fade-right"
                             />
                             <img
                                 src="./assets/icons/work-decor-01.svg"
                                 alt=""
                                 class="works__decor-1"
+                                data-aos="fade-left"
                             />
                             <img
                                 src="./assets/icons/work-decor-02.svg"
                                 alt=""
                                 class="works__decor-2"
+                                data-aos="fade-left"
                             />
                         </div>
                         <section class="works__content">
@@ -308,16 +321,19 @@
                                 src="./assets/img/payment.svg"
                                 alt=""
                                 class="payment__img"
+                                data-aos="fade-right"
                             />
                             <img
                                 src="./assets/icons/payment-decor-01.svg"
                                 alt=""
                                 class="payment__decor-1"
+                                data-aos="fade-left"
                             />
                             <img
                                 src="./assets/icons/payment-decor-02.svg"
                                 alt=""
                                 class="payment__decor-2"
+                                data-aos="fade-left"
                             />
                         </div>
                     </div>
@@ -333,16 +349,19 @@
                                 src="./assets/img/method.png"
                                 alt=""
                                 class="method__img"
+                                data-aos="fade-right"
                             />
                             <img
                                 src="./assets/icons/method-decor-01.svg"
                                 alt=""
                                 class="method__decor-1"
+                                data-aos="fade-left"
                             />
                             <img
                                 src="./assets/icons/method-decor-02.svg"
                                 alt=""
                                 class="method__decor-2"
+                                data-aos="fade-left"
                             />
                         </div>
                         <section class="method__content">
@@ -611,6 +630,7 @@
             </section>
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__row">
@@ -709,5 +729,11 @@
                 © 2020 Ligft Media All rights reserved.
             </p>
         </footer>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
